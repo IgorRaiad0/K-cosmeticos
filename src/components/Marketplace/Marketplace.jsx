@@ -1,4 +1,5 @@
 import React, { useState, useMemo } from 'react';
+import { Search } from 'lucide-react';
 import './Marketplace.css';
 
 const Marketplace = () => {
