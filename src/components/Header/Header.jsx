@@ -38,6 +38,7 @@ const Header = () => {
                         <li><Link to="/" onClick={() => setIsMenuOpen(false)}>Início</Link></li>
                         <li><a href="#produtos" onClick={() => setIsMenuOpen(false)}>Produtos</a></li>
                         <li><Link to="/marketplace" onClick={() => setIsMenuOpen(false)}>Vitrine</Link></li>
+                        <li><a href="#localizacao" onClick={() => setIsMenuOpen(false)}>Localização</a></li>
                         <li><a href="#sobre" onClick={() => setIsMenuOpen(false)}>Sobre</a></li>
                         <li><a href="#contato" onClick={() => setIsMenuOpen(false)}>Contato</a></li>
                     </ul>

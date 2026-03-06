@@ -47,7 +47,7 @@ const Marketplace = () => {
                             value={searchTerm}
                             onChange={(e) => setSearchTerm(e.target.value)}
                         />
-                        <span className="search-icon">🔍</span>
+                        <Search className="search-icon-svg" size={20} />
                     </div>
 
                     <div className="filter-categories">
