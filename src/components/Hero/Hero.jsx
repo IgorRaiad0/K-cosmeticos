@@ -1,3 +1,4 @@
+import { Instagram, Facebook, Music2 } from 'lucide-react';
 import './Hero.css';
 import heroVideo from '../../assets/hero-premium.mp4';
 import logo from '../../assets/logo.png';
@@ -21,16 +22,22 @@ const Hero = () => {
 
             <div className="hero-content">
                 <div className="hero-text-wrapper">
-                    <h1 className="hero-logo-container">
-                        <img src={logo} alt="K Cosméticos Logo" className="hero-logo" />
-                    </h1>
+                    <div className="hero-brand">
+                        <h1 className="hero-logo-container">
+                            <img src={logo} alt="K Cosméticos Logo" className="hero-logo" />
+                        </h1>
+                        <div className="hero-socials-mini">
+                            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer"><Instagram size={20} /></a>
+                            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer"><Facebook size={20} /></a>
+                            <a href="https://tiktok.com" target="_blank" rel="noopener noreferrer"><Music2 size={20} /></a>
+                        </div>
+                    </div>
                     <p className="hero-description">
                         Descubra a harmonia perfeita entre ingredientes naturais e alta performance
                         para uma pele radiantemente saudável.
                     </p>
                     <div className="hero-actions">
-                        <button className="btn-primary">Explorar Coleção</button>
-                        <button className="btn-secondary">Nossa História</button>
+                        <a href="#fornecedores" className="btn-primary">Explorar Coleção</a>
                     </div>
                 </div>
             </div>

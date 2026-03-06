@@ -1,5 +1,5 @@
 import React from 'react';
-import { Instagram, Facebook, Youtube, CreditCard, Smartphone, Github } from 'lucide-react';
+import { Instagram, Facebook, Music2, CreditCard, Smartphone, Github } from 'lucide-react';
 import './Footer.css';
 
 const Footer = () => {
@@ -16,8 +16,8 @@ const Footer = () => {
                             <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
                                 <Facebook size={24} />
                             </a>
-                            <a href="https://youtube.com" target="_blank" rel="noopener noreferrer">
-                                <Youtube size={24} />
+                            <a href="https://tiktok.com" target="_blank" rel="noopener noreferrer">
+                                <Music2 size={24} />
                             </a>
                         </div>
                     </div>

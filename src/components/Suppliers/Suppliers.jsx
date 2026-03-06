@@ -27,7 +27,7 @@ const Suppliers = () => {
     const doubleLogos = [...supplierLogos, ...supplierLogos, ...supplierLogos];
 
     return (
-        <section className="suppliers-section">
+        <section className="suppliers-section" id="fornecedores">
             <div className="suppliers-container">
                 <h2 className="suppliers-title">Nossos principais fornecedores</h2>
 
