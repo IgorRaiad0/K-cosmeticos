@@ -1,5 +1,7 @@
 import React from 'react';
 import './Showcase.css';
+import cosmeticos from '../../assets/cosmeticos.jpeg';
+import acessorios from '../../assets/assesorios.png';
 
 const Showcase = () => {
     return (
@@ -9,9 +11,7 @@ const Showcase = () => {
                 {/* Primeira Linha: Cosméticos */}
                 <div className="showcase-row">
                     <div className="showcase-image-container">
-                        <div className="image-placeholder">
-                            <span>Imagem Cosméticos</span>
-                        </div>
+                        <img src={cosmeticos} alt="Cosméticos Premium" className="showcase-img" />
                     </div>
                     <div className="showcase-text-container">
                         <span className="showcase-tag">Cuidados & Beleza</span>
@@ -28,9 +28,7 @@ const Showcase = () => {
                 {/* Segunda Linha: Variedades (Acessórios) */}
                 <div className="showcase-row reverse">
                     <div className="showcase-image-container">
-                        <div className="image-placeholder">
-                            <span>Imagem Acessórios</span>
-                        </div>
+                        <img src={acessorios} alt="Acessórios e Variedades" className="showcase-img" />
                     </div>
                     <div className="showcase-text-container">
                         <span className="showcase-tag">Variedades & Estilo</span>

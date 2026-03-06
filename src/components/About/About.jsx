@@ -1,5 +1,6 @@
 import React from 'react';
 import './About.css';
+import sobreImg from '../../assets/sobre.jpeg';
 
 const About = () => {
     return (
@@ -27,10 +28,7 @@ const About = () => {
                 </div>
                 <div className="about-image">
                     <div className="image-wrapper">
-                        <div className="about-image-placeholder">
-                            {/* Aqui poderá entrar uma imagem real da fundadora ou da loja */}
-                            <span>K-Cosméticos</span>
-                        </div>
+                        <img src={sobreImg} alt="K-Cosméticos História" className="about-img" />
                     </div>
                 </div>
             </div>

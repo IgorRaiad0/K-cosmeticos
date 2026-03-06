@@ -1,14 +1,13 @@
 import React from 'react';
 import './WorkWithUs.css';
+import parceriaImg from '../../assets/parceria.png';
 
 const WorkWithUs = () => {
     return (
         <section className="work-section" id="trabalhe-conosco">
             <div className="work-container">
                 <div className="work-image-side">
-                    <div className="work-image-placeholder">
-                        <span>Professional Line</span>
-                    </div>
+                    <img src={parceriaImg} alt="Parceria Profissional" className="work-img" />
                 </div>
 
                 <div className="work-content-side">
