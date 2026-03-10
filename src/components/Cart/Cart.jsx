@@ -31,10 +31,12 @@ const Cart = () => {
         message += `\n*Total do Pedido: ${formatPrice(cartTotal)}*`;
 
         const encodedMessage = encodeURIComponent(message);
-        const whatsappNumber = "5511999999999"; // TODO: Substituir pelo número real do cliente
+        const whatsappNumber = "5598982954970";
         const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodedMessage}`;
 
         window.open(whatsappUrl, '_blank');
+        clearCart();
+        toggleCart();
     };
 
     return (

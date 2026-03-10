@@ -21,7 +21,7 @@ const WorkWithUs = () => {
                     </p>
 
                     <div className="work-actions">
-                        <a href="https://wa.me/seunumeroaqui" className="btn-work whatsapp" target="_blank" rel="noopener noreferrer">
+                        <a href="https://wa.me/5598982954970" className="btn-work whatsapp" target="_blank" rel="noopener noreferrer">
                             Falar pelo WhatsApp
                         </a>
                         <a href="mailto:contato@kcosmeticos.com" className="btn-work email">

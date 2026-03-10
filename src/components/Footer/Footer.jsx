@@ -47,9 +47,9 @@ const Footer = () => {
                     </div>
                     <div className="developer">
                         <span>Desenvolvido por</span>
-                        <a href="https://github.com/igorryan" target="_blank" rel="noopener noreferrer" className="github-link">
+                        <a href="https://github.com/IgorRaiad0" target="_blank" rel="noopener noreferrer" className="github-link">
                             <Github size={18} />
-                            GitHub
+                            Igor Ryan
                         </a>
                     </div>
                 </div>

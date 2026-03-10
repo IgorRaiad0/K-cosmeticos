@@ -45,6 +45,7 @@
     justify-content: center;
     transition: all 0.3s ease;
     opacity: 0.8;
+    z-index: 1100;
 }
 
 .header-cart-btn:hover {
@@ -68,6 +69,24 @@
     align-items: center;
     justify-content: center;
     box-shadow: 0 4px 10px rgba(212, 175, 55, 0.3);
+}
+
+.header-logo {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--text-light);
+    font-size: 1.2rem;
+    font-weight: 700;
+    transition: all 0.3s ease;
+}
+
+.header-logo:hover {
+    color: var(--primary);
+}
+
+.header-logo svg {
+    color: var(--primary);
 }
 
 .header-nav {

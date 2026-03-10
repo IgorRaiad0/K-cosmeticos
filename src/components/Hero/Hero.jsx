@@ -22,7 +22,7 @@ const Hero = ({ isLoading }) => {
 
             <div className="hero-content">
                 <div className="hero-text-wrapper">
-                    <div className="hero-brand" style={{ opacity: isLoading ? 0 : 1, transition: 'opacity 0.3s ease 1.2s' }}>
+                    <div className="hero-brand">
                         <h1 className="hero-logo-container">
                             <img src={logo} alt="K Cosméticos Logo" className="hero-logo" />
                         </h1>
@@ -34,7 +34,7 @@ const Hero = ({ isLoading }) => {
                     </div>
                     <p className="hero-description">
                         Descubra a harmonia perfeita entre ingredientes naturais e alta performance
-                        para uma pele radiantemente saudável.
+                        para uma beleza radiantemente saudável.
                     </p>
                     <div className="hero-actions">
                         <a href="#fornecedores" className="btn-primary">Explorar Coleção</a>

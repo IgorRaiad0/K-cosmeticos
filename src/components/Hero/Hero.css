@@ -98,6 +98,7 @@
 .btn-primary {
     display: inline-flex;
     align-items: center;
+    justify-content: center;
     text-decoration: none;
     background: var(--primary);
     color: #000;
@@ -107,6 +108,8 @@
     font-size: 1.1rem;
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    z-index: 10;
+    position: relative;
 }
 
 .btn-primary:hover {
@@ -117,7 +120,7 @@
 
 .hero-scroll-indicator {
     position: absolute;
-    bottom: 3rem;
+    bottom: 1.5rem;
     left: 50%;
     transform: translateX(-50%);
     display: flex;
@@ -125,6 +128,7 @@
     align-items: center;
     gap: 0.8rem;
     opacity: 0.6;
+    z-index: 30;
 }
 
 .hero-scroll-indicator span {

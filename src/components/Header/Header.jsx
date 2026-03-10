@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { ShoppingBag } from 'lucide-react';
+import { ShoppingBag, Sparkles } from 'lucide-react';
 import { useCart } from '../../context/CartContext';
 import './Header.css';
 import logo from '../../assets/logo.png';
@@ -32,7 +32,8 @@ const Header = ({ isLoading }) => {
                     onClick={() => setIsMenuOpen(false)}
                     style={{ opacity: isLoading ? 0 : 1, transition: 'opacity 0.3s ease 1.2s' }}
                 >
-                    <img src={logo} alt="K-Cosméticos Logo" />
+                    <Sparkles size={28} />
+                    <span>K Cosméticos</span>
                 </Link>
 
                 <nav className="header-nav">

@@ -20,7 +20,7 @@ const Contact = () => {
                         tirar dúvidas sobre produtos ou auxiliar em sua compra agora mesmo.
                     </p>
                     <a
-                        href="https://wa.me/seunumeroaqui"
+                        href="https://wa.me/5598982954970"
                         className="btn-whatsapp-large"
                         target="_blank"
                         rel="noopener noreferrer"
@@ -38,7 +38,7 @@ const Contact = () => {
                         </div>
                         <div className="form-group">
                             <label><Mail size={16} /> E-mail</label>
-                            <input type="email" placeholder="seu@email.com" required />
+                            <input type="email" placeholder="kcosmeticos390@gmail.com" required />
                         </div>
                         <div className="form-group">
                             <label><MessageSquare size={16} /> Mensagem</label>
