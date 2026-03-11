@@ -27,7 +27,7 @@ const Hero = ({ isLoading }) => {
                             <img src={logo} alt="K Cosméticos Logo" className="hero-logo" />
                         </h1>
                         <div className="hero-socials-mini">
-                            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer"><Instagram size={20} /></a>
+                            <a href="https://www.instagram.com/k_cosmeticos.cn?utm_source=qr&igsh=bzdxZGs1YW0ycHk4" target="_blank" rel="noopener noreferrer"><Instagram size={20} /></a>
                             <a href="https://facebook.com" target="_blank" rel="noopener noreferrer"><Facebook size={20} /></a>
                             <a href="https://tiktok.com" target="_blank" rel="noopener noreferrer"><Music2 size={20} /></a>
                         </div>

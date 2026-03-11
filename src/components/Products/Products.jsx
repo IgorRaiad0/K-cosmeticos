@@ -69,7 +69,7 @@ const Products = () => {
                                 <div className="product-card" key={product.id}>
                                     <div className="product-image-container">
                                         {product.image ? (
-                                            <img src={product.image} alt={product.name} className="product-img" />
+                                            <img src={product.image} alt={product.name} className="product-img" loading="lazy" />
                                         ) : (
                                             <div className="product-placeholder">
                                                 <span>{product.category}</span>

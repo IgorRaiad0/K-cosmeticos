@@ -10,7 +10,7 @@ const Footer = () => {
                     <div className="footer-socials">
                         <h3>Siga-nos</h3>
                         <div className="social-links">
-                            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+                            <a href="https://www.instagram.com/k_cosmeticos.cn?utm_source=qr&igsh=bzdxZGs1YW0ycHk4" target="_blank" rel="noopener noreferrer">
                                 <Instagram size={24} />
                             </a>
                             <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">

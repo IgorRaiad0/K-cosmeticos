@@ -35,7 +35,7 @@ const Suppliers = () => {
                     <div className="suppliers-track">
                         {doubleLogos.map((logo, index) => (
                             <div className="supplier-item" key={index}>
-                                <img src={logo.src} alt={logo.name} />
+                                <img src={logo.src} alt={logo.name} loading="lazy" />
                             </div>
                         ))}
                     </div>

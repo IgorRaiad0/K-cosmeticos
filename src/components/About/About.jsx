@@ -1,12 +1,26 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 import './About.css';
 import sobreImg from '../../assets/sobre.jpeg';
 
 const About = () => {
+    const contentRef = useRef(null);
+    const imageRef = useRef(null);
+    const goalsRef = useRef(null);
+
+    useEffect(() => {
+        const loadAnimations = async () => {
+            const { slideInLeft, slideInRight, fadeInUp } = await import('../../utils/gsapAnimations');
+            if (contentRef.current) slideInLeft(contentRef.current);
+            if (imageRef.current) slideInRight(imageRef.current, 0.2);
+            if (goalsRef.current) fadeInUp(goalsRef.current, 0.4);
+        };
+        loadAnimations();
+    }, []);
+
     return (
         <section className="about-section" id="sobre">
             <div className="about-container">
-                <div className="about-content">
+                <div className="about-content" ref={contentRef}>
                     <span className="about-tag">Nossa História</span>
                     <h2 className="about-title">Beleza com Propósito</h2>
                     <p className="about-description">
@@ -15,7 +29,7 @@ const About = () => {
                         Desde o nosso primeiro dia, focamos em curar os melhores produtos, unindo
                         tecnologia avançada e ingredientes naturais.
                     </p>
-                    <div className="about-goals">
+                    <div className="about-goals" ref={goalsRef}>
                         <div className="goal-item">
                             <h3>Nossa Meta</h3>
                             <p>Ser a principal referência em cuidados pessoais, oferecendo uma experiência de compra personalizada e luxuosa.</p>
@@ -26,9 +40,9 @@ const About = () => {
                         </div>
                     </div>
                 </div>
-                <div className="about-image">
+                <div className="about-image" ref={imageRef}>
                     <div className="image-wrapper">
-                        <img src={sobreImg} alt="K-Cosméticos História" className="about-img" />
+                        <img src={sobreImg} alt="K-Cosméticos História" className="about-img" loading="lazy" />
                     </div>
                 </div>
             </div>

@@ -26,7 +26,16 @@ export const ProductProvider = ({ children }) => {
         const fetchProducts = async () => {
             try {
                 setLoading(true);
-                const response = await fetch(SHEET_URL);
+                const controller = new AbortController();
+                const timeoutId = setTimeout(() => controller.abort(), 10000);
+
+                const response = await fetch(SHEET_URL, {
+                    signal: controller.signal,
+                    cache: 'force-cache'
+                });
+                
+                clearTimeout(timeoutId);
+                
                 if (!response.ok) throw new Error('Falha ao carregar os dados da planilha');
 
                 const csvData = await response.text();
@@ -35,8 +44,13 @@ export const ProductProvider = ({ children }) => {
                 setProducts(parsedProducts);
                 setError(null);
             } catch (err) {
-                console.error('Erro ao buscar produtos:', err);
-                setError(err.message);
+                if (err.name === 'AbortError') {
+                    console.error('Requisição cancelada por timeout');
+                    setError('Tempo de requisição excedido');
+                } else {
+                    console.error('Erro ao buscar produtos:', err);
+                    setError(err.message);
+                }
             } finally {
                 setLoading(false);
             }
